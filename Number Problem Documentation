@@ -4,7 +4,12 @@ Meant to calculate the answer to phrases like “What is 5 plus 3 times 2 divide
 
 It’s main focus is on trying to accept natural language in the console input. 
 
-In order to accept as large as possible a range of phrases, it also cheerfully accepts nonsense input. For example:  “Adders are Slytherin? Multinomial 1 2 3 4” gives “9” as an answer, because Adders begins with “Add” (to accommodate different declinations of add), so that operator adds the first two numbers. “are” and “Slytherin” are nothing, as is the question mark, so it simply ignores this. Multinomial is recognised as beginning with “Mult” so clearly it’s a multiplication between the result of the first sum and the third number, giving the answer 9. It doesn’t have any more operators, so it ignores the 4.
+In order to accept as large as possible a range of phrases, it also cheerfully accepts nonsense input. 
+For example:  “Adders are Slytherin? Multinomial 1 2 3 4” gives “9” as an answer. Why? Adders begins with 
+“Add” (to accommodate different declinations of add), so that operator adds the first two numbers. “are” and 
+“Slytherin” are nothing, as is the question mark, so it simply ignores this. Multinomial is recognised as beginning 
+with “Mult” so clearly it’s a multiplication between the result of the first sum and the third number, giving 
+the answer 9. It doesn’t have any more operators, so it ignores the 4.
 
 Only integer numbers are currently accepted (full stops and commas are stripped). 
 Large numbers are accepted. (Within Java’s double range). 
