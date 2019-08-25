@@ -36,7 +36,7 @@ public class NumbersToRaindrops {
 	
 	private static boolean CheckInput(String numb) {
 		try {
-			int number = Integer.parseInt(numb);
+			Integer.parseInt(numb);
 			return true;
 		}
 		catch(NumberFormatException nfe) {
@@ -55,8 +55,7 @@ public class NumbersToRaindrops {
 	}
 	
 	private static boolean IsFactor(int n, int fac) {
-		if(n%fac==0) return true;
-		else return false;
+		return (n%fac==0);
 	}
 	
 	}
