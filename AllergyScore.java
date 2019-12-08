@@ -34,7 +34,7 @@ public class AllergyScore {
 		String r = reader.readLine();
 		r.toLowerCase();
 		if(allergies.contains(r)) System.out.println("The patient is allergic to " + r + ".");
-		else System.out.println("The patient is not allergic to " + r + ".");
+		else System.out.println("The patient is not allergic to " + r + ", or it was not tested for.");
 	}
 
 	private static String EvaluateScore(int score, int ceil) {
